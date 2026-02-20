@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HARINASANDRATRA Tech News</title>
+<style>
+* {margin:0; padding:0; box-sizing:border-box; font-family: 'Arial', sans-serif;}
+body {background:#f5f5f5; color:#222; line-height:1.6;}
+a {text-decoration:none; color: inherit;}
+header {background: linear-gradient(90deg, #4a90e2, #50e3c2); color: #fff; padding: 20px 10%; display:flex; justify-content:space-between; align-items:center; position: sticky; top:0; z-index:1000;}
+header h1 {font-size:1.8em;}
+nav a {margin-left:20px; font-weight:bold; transition:0.3s;}
+nav a:hover {color:#ffd700;}
+.hero {background: url('https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat; height:60vh; display:flex; align-items:center; justify-content:center; color:#fff; text-shadow: 2px 2px 8px rgba(0,0,0,0.7); text-align:center;}
+.hero h2 {font-size:2.5em;}
+section {padding:60px 10%;}
+.articles {display:grid; grid-template-columns: repeat(auto-fit,minmax(280px,1fr)); gap:20px;}
+.article {background:#fff; padding:20px; border-radius:10px; box-shadow:0 5px 15px rgba(0,0,0,0.1);}
+.article img {width:100%; border-radius:10px;}
+.article h3 {margin:15px 0 10px;}
+.article p {font-size:0.95em; color:#555;}
+.article button {margin-top:10px; padding:10px 15px; background:#4a90e2; color:#fff; border:none; border-radius:5px; cursor:pointer; transition:0.3s;}
+.article button:hover {background:#50e3c2;}
+.article .full-text {display:none; margin-top:10px; color:#333;}
+.about {display:flex; flex-wrap:wrap; align-items:center; gap:40px;}
+.about img {width:300px; border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,0.1);}
+.about div {flex:1;}
+.contact form {display:flex; flex-direction:column; gap:15px;}
+.contact input, .contact textarea {padding:10px; border-radius:5px; border:1px solid #ccc;}
+.contact button {padding:12px; border:none; border-radius:5px; background:#50e3c2; color:#fff; font-weight:bold; cursor:pointer; transition:0.3s;}
+.contact button:hover {background:#4a90e2;}
+footer {background:#222; color:#fff; text-align:center; padding:20px;}
+footer a {color:#50e3c2;}
+@media(max-width:768px){header{flex-direction:column; text-align:center;} nav a{margin:10px;}}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>TechVision 2026</h1>
+  <nav>
+    <a href="#home">Accueil</a>
+    <a href="#articles">Articles</a>
+    <a href="#about">À propos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero" id="home">
+  <h2>Bienvenue sur les dernières nouvelles et technologies !</h2>
+</section>
+
+<section id="articles">
+  <h2 style="text-align:center; margin-bottom:40px;">Dernières Actualités</h2>
+  <div class="articles">
+
+    <div class="article">
+      <img src="https://images.unsplash.com/photo-1581092334849-d6e101f1b3f4?auto=format&fit=crop&w=800&q=80" alt="Tech1">
+      <h3>Développement de l'IA en 2026</h3>
+      <p>Résumé : L'intelligence artificielle transforme la manière de travailler des entreprises...</p>
+      <div class="full-text">
+        L'intelligence artificielle transforme la manière de travailler des entreprises et la vie quotidienne des particuliers. Les nouvelles technologies d'IA automatisent des tâches, améliorent la productivité et changent les modèles commerciaux à l'échelle mondiale.
+      </div>
+      <button onclick="toggleText(this)">Lire plus</button>
+    </div>
+
+    <div class="article">
+      <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80" alt="Tech2">
+      <h3>Nouveau Smartphone avec technologie 5G</h3>
+      <p>Résumé : Le nouveau smartphone offre une expérience rapide...</p>
+      <div class="full-text">
+        Le nouveau smartphone offre une expérience rapide et une connexion sans interruption. Ses fonctionnalités avancées permettent de naviguer plus efficacement, de jouer à des jeux haute performance et de profiter des services cloud à haute vitesse.
+      </div>
+      <button onclick="toggleText(this)">Lire plus</button>
+    </div>
+
+    <div class="article">
+      <img src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?auto=format&fit=crop&w=800&q=80" alt="Tech3">
+      <h3>Innovation en robotique</h3>
+      <p>Résumé : Les nouveaux robots peuvent effectuer diverses tâches...</p>
+      <div class="full-text">
+        Les nouveaux robots peuvent effectuer diverses tâches, aidant l'industrie et la vie quotidienne. Ils sont capables de manipuler des objets, d'assister dans les soins de santé et d'améliorer l'efficacité dans la production industrielle.
+      </div>
+      <button onclick="toggleText(this)">Lire plus</button>
+    </div>
+
+  </div>
+</section>
+
+<section id="about">
+  <h2 style="text-align:center; margin-bottom:40px;">À propos de moi</h2>
+  <div class="about">
+    <img src="https://images.unsplash.com/photo-1590608897129-79aeb4d58a88?auto=format&fit=crop&w=400&q=80" alt="About">
+    <div>
+      <p>Bonjour, je suis <strong>HARINASANDRATRA Santatriniaina ANGELO</strong>, créateur de ce site. Passionné de technologie, je partage les dernières actualités sur les gadgets, l'IA, la robotique et tout ce qui concerne le domaine tech.</p>
+      <p>Vous pouvez me contacter par email à <a href="mailto:haryangelo@proton.me">haryangelo@proton.me</a> ou par téléphone au <strong>0326495373</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2 style="text-align:center; margin-bottom:40px;">Contact</h2>
+  <div class="contact">
+    <form onsubmit="submitForm(event)">
+      <input type="text" name="name" placeholder="Nom" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" placeholder="Message" rows="6" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+</section>
+
+<section style="padding:40px 10%; text-align:center;">
+  <h2>AdSense</h2>
+  <div style="border:1px dashed #ccc; padding:20px; border-radius:10px;">
+    Ici vous pouvez insérer votre code Google AdSense : <br> <strong>YOUR_ADSENSE_CODE</strong>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 HARINASANDRATRA Tech | <a href="mailto:haryangelo@proton.me">haryangelo@proton.me</a>
+</footer>
+
+<script>
+// Smooth scroll
+document.querySelectorAll('nav a').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    document.querySelector(link.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+  });
+});
+
+// Contact form simulation
+function submitForm(e){
+  e.preventDefault();
+  alert('Message envoyé ! Merci.');
+}
+
+// Toggle full text
+function toggleText(btn){
+  const fullText = btn.previousElementSibling;
+  if(fullText.style.display === "block"){
+    fullText.style.display = "none";
+    btn.textContent = "Lire plus";
+  } else {
+    fullText.style.display = "block";
+    btn.textContent = "Lire moins";
+    fullText.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+}
+</script>
+
+</body>
+</html>
